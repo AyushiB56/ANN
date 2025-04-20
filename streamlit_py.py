@@ -83,7 +83,7 @@ testing_data= standard_scalar.transform(testing_data)
 prediction = model.predict(testing_data)
 
 if prediction[0][0].item() >0.5:
-  print("patient is likely to churn")
+  st.write("patient is likely to churn")
 else:
-  print("patient is not likely to churn")
+  st.write("patient is not likely to churn")
 
